@@ -1,0 +1,93 @@
+apply plugin: 'java-library'
+
+//apply plugin: 'idea'
+//apply plugin: 'eclipse'
+//
+//idea {
+//    module {
+//        downloadJavadoc = true
+//    }
+//}
+//
+//eclipse {
+//    classpath {
+//        downloadJavadoc = true
+//    }
+//}
+
+
+sourceCompatibility = 1.8
+
+repositories {
+//    jcenter()
+    mavenLocal()
+    mavenCentral()
+    flatDir {
+        dirs emberdir + '/lib'
+    }
+}
+
+ext {
+    emberVersion = '1.9.51'
+    quantServerCommonsVersion = '5.4.20'
+}
+
+dependencies {
+    Publication
+    implementation "deltix:deltix-anvil-lang:$emberVersion"
+    implementation "deltix:deltix-ember-api:$emberVersion"
+    implementation "deltix:deltix-ember-algo-api:$emberVersion"
+    implementation "deltix:deltix-ember-message:$emberVersion"
+    implementation "deltix:deltix-ember-codec:$emberVersion"
+    implementation "deltix:deltix-anvil-cluster:$emberVersion"
+
+    // Centralized security master
+    implementation 'deltix:sm-messages:1.4.38'
+    implementation 'deltix:deltix-sm-api:1.4.38'
+
+    // Decimal datatype
+    implementation 'deltix:deltix-dfp:0.10.21'
+
+    // Logging
+    implementation 'deltix:deltix-gflog-api:2.1.12'
+
+    // Order Book API
+    compile 'deltix:deltix-quoteflow:3.7.29'
+    compile 'deltix:rtmath-containers:2.3.12'
+    compile 'deltix:rtmath-containers-decimal:2.3.12'
+
+    // Deltix Collections are used in some TimeBase messages
+    implementation "deltix.qsrv:deltix-commons-collections:$quantServerCommonsVersion"
+    implementation "deltix.qsrv:deltix-commons-util:$quantServerCommonsVersion"
+    implementation "deltix.qsrv:deltix-commons-lang:$quantServerCommonsVersion"
+    implementation "deltix.qsrv:deltix-timebase-api-messages:5.4.80"
+
+    // We need this if we want to Run/Debug algo from this project
+    runtime  "deltix:deltix-ember-app:$emberVersion"
+
+    // @Nullable, etc.
+    compile group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
+
+    // Unit tests
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testRuntime 'org.mockito:mockito-core:2.6.3'
+    testCompile "deltix:deltix-ember-algo-test:$emberVersion"
+    testCompile "deltix:deltix-ember-app:$emberVersion"
+    testCompile "deltix:deltix-ember-message-bus-client:$emberVersion"
+}
+
+
+// ZIP with sample algorithms to share with clients (result file can be found under build/distributions/*.zip)
+task makeZIP(type: Zip) {
+    baseName = 'deltix-aglo-sample'
+
+    from('.') {
+        include '**/*'
+        exclude '.git/'
+        exclude '.gradle/'
+        exclude '.idea/libraries/'
+        exclude '.idea/vcs.xml'
+        exclude 'build/'
+        exclude 'out/'
+    }
+}

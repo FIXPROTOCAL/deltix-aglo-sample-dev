@@ -1,0 +1,44 @@
+y2022-03-10 16:28:02.706 INFO [Test worker] Running Fuzzy test Test_IcebergAlgorithmFuzzy with random seed 1513882683661
+r2022-03-10 16:28:02.706 INFO [Test worker] Disabling excessive logging (re-run with verbose flag to see full log
+ i2022-03-10 16:29:30.739 ERROR [Test worker] OVERFILL for order ALGORITHM:Child#1: executed 150 out of 0
+ e2022-03-10 16:29:30.739 ERROR [Test worker] Potential OVERFILL reported for order ALGORITHM:Child#1
+ g2022-03-10 16:29:30.740 ERROR [Test worker] OVERFILL for order CLIENT:Parent#1: executed 150 out of 0
+ c2022-03-10 16:29:30.740 ERROR [Test worker] Potential OVERFILL reported for order CLIENT:Parent#1
+ i2022-03-10 16:29:30.741 ERROR [Test worker] OVERFILL for order ALGORITHM:Child#1: executed 200 out of 0
+ e2022-03-10 16:29:30.741 ERROR [Test worker] Potential OVERFILL reported for order ALGORITHM:Child#1
+ g2022-03-10 16:29:30.741 ERROR [Test worker] OVERFILL for order CLIENT:Parent#1: executed 200 out of 0
+ c2022-03-10 16:29:30.741 ERROR [Test worker] Potential OVERFILL reported for order CLIENT:Parent#1
+ i2022-03-10 16:29:30.743 ERROR [Test worker] OVERFILL for order ALGORITHM:Child#1: executed 250 out of 0
+ e2022-03-10 16:29:30.743 ERROR [Test worker] Potential OVERFILL reported for order ALGORITHM:Child#1
+ g2022-03-10 16:29:30.744 ERROR [Test worker] OVERFILL for order CLIENT:Parent#1: executed 250 out of 0
+ c2022-03-10 16:29:30.744 ERROR [Test worker] Potential OVERFILL reported for order CLIENT:Parent#1
+ i2022-03-10 16:29:30.745 ERROR [Test worker] OVERFILL for order ALGORITHM:Child#1: executed 300 out of 0
+ e2022-03-10 16:29:30.745 ERROR [Test worker] Potential OVERFILL reported for order ALGORITHM:Child#1
+ g2022-03-10 16:29:30.746 ERROR [Test worker] OVERFILL for order CLIENT:Parent#1: executed 300 out of 0
+ c2022-03-10 16:29:30.746 ERROR [Test worker] Potential OVERFILL reported for order CLIENT:Parent#1
+!k2022-03-10 16:29:30.770 ERROR [Test worker] OVERFILL for order ALGORITHM:Child#1: executed 125 out of 100
+*)ASK 0.5 @ 444078.270125
+*)ASK 1 @ 444078.270125
+*)ASK 3 @ 444079.0056583667
+*)ASK 5 @ 444079.37342505
+*)ASK 10 @ 444079.925075075
+*)BID 0.5 @ 443969.04342005
+*)BID 1 @ 443968.712430035
+*)BID 3 @ 443913.1612725175
+*)ASK 0.5 @ 444078.229875
+*)ASK 1 @ 444078.229875
+*)ASK 3 @ 444078.9654083
+*)ASK 5 @ 444079.33317495
+*)ASK 10 @ 444079.884824925
+*)BID 0.5 @ 443969.00317995
+*)BID 1 @ 443968.672189965
+*)BID 3 @ 443913.1210374825
+*)ASK 0.5 @ 444078.229875
+*)ASK 1 @ 444078.229875
+*)ASK 3 @ 444078.9654083
+*)ASK 5 @ 444079.33317495
+*)ASK 10 @ 444079.884824925
+*)BID 0.5 @ 443968.34119998
+*)BID 1 @ 443968.34119998
+*)BID 3 @ 443894.56720999
+*)BID 5 @ 443879.812411992
