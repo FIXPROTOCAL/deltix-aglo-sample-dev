@@ -5,20 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2794f40f-d83f-4d5b-ad35-5cbba04ef0de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/deltix_ember_1_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/bollinger/BollingerBandAlgorithm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/bollinger/BollingerBandAlgorithmFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/bollinger/BollingerBandInstrument.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/bollinger/BollingerBandSettings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/price/SynthPriceAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/price/SynthPriceAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/algorithm-sample-1.0.8-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/algorithm-sample-1.0.8-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmFuzzy.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmFuzzy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmMock.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmMock.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/deltix.ember.samples.algorithm.iceberg.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/deltix.ember.samples.algorithm.iceberg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/deltix.ember.samples.algorithm.price.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/deltix.ember.samples.algorithm.price.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmFuzzy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmFuzzy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmMock.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmMock.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_1913074650360726197_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_538073988257559749_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_5543492100920157873_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_6212122980111270415_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_7964970729055395685_tmp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +72,6 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="algorithm-sample" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -80,24 +93,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../deltix-ember-1.9.51/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.30625" />
     <property name="project.structure.side.proportion" value="0.497006" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\CODE\sample\deltix-aglo-sample-dev\src\main\java\deltix\ember\samples\algorithm" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.deltix-aglo-sample-1.0.8-SNAPSHOT [build]">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="deltix-aglo-sample-1.0.8-SNAPSHOT [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -202,6 +209,7 @@
       <workItem from="1646901312537" duration="1058000" />
       <workItem from="1646902430568" duration="252000" />
       <workItem from="1646903401390" duration="1051000" />
+      <workItem from="1646968866699" duration="393000" />
     </task>
     <servers />
   </component>

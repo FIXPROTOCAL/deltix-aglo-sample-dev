@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmFuzzy" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-10T09:28:02" hostname="DESKTOP-AU8H857" time="87.431">
+<testsuite name="deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmFuzzy" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-11T03:22:54" hostname="DESKTOP-AU8H857" time="87.231">
   <properties/>
-  <testcase name="test" classname="deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmFuzzy" time="87.431"/>
-  <system-out><![CDATA[2022-03-10 16:28:02.706 INFO [Test worker] Running Fuzzy test Test_IcebergAlgorithmFuzzy with random seed 1513882683661
-2022-03-10 16:28:02.706 INFO [Test worker] Disabling excessive logging (re-run with verbose flag to see full log
+  <testcase name="test" classname="deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmFuzzy" time="87.231"/>
+  <system-out><![CDATA[2022-03-11 10:22:54.355 INFO [Test worker] Running Fuzzy test Test_IcebergAlgorithmFuzzy with random seed 1513882683661
+2022-03-11 10:22:54.355 INFO [Test worker] Disabling excessive logging (re-run with verbose flag to see full log
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
