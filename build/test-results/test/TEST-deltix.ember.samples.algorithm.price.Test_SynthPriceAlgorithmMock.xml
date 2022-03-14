@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-11T03:24:22" hostname="DESKTOP-AU8H857" time="0.049">
+<testsuite name="deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-14T02:45:28" hostname="DESKTOP-BHQ8L97" time="1.161">
   <properties/>
-  <testcase name="simplePriceOuput" classname="deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock" time="0.049"/>
+  <testcase name="simplePriceOuput" classname="deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock" time="1.161"/>
   <system-out><![CDATA[ASK 0.5 @ 444078.270125
 ASK 1 @ 444078.270125
 ASK 3 @ 444079.0056583667
