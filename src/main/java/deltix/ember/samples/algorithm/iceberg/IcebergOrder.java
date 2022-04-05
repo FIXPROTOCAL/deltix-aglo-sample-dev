@@ -8,6 +8,8 @@ import deltix.ember.message.smd.InstrumentAttribute;
 import deltix.ember.message.smd.InstrumentUpdate;
 import deltix.ember.service.algorithm.slicer.SlicingAlgoOrder;
 import deltix.util.collections.generated.ObjectList;
+import deltix.gflog.Log;
+import deltix.gflog.LogFactory;
 
 public final class IcebergOrder extends SlicingAlgoOrder<IcebergOrderParameters> {
     public IcebergOrder() {

@@ -12,9 +12,9 @@ public class OrderSubmitSample extends SampleSupportTools {
     public static void main(String[] args) throws InterruptedException {
         sendRequest(
                 (publication) -> {
-                    OrderNewRequest request = createNewOrderRequest(Side.BUY, 10, "BTCUSD", 7500);
+                    OrderNewRequest request = createNewOrderRequest(Side.BUY, 10, "BTCUSD", 0);
                     publication.onNewOrderRequest(request);
-                    System.out.println("New order request was sent " + request.getSourceId() + ':' + request.getOrderId());
+                    System.out.println("New order request was sent " + request.getSourceId() + ':' + request.getOrderId() + ":" + request.getOrderType());
                 }
         );
     }
@@ -30,7 +30,7 @@ public class OrderSubmitSample extends SampleSupportTools {
         request.setDisplayQuantity(Decimal64Utils.fromLong((long) (size / 10)));
         request.setOrderType(request.hasLimitPrice() ? OrderType.LIMIT : OrderType.MARKET);
         request.setDestinationId(AlphanumericCodec.encode("ICEBERG"));
-        request.setExchangeId(AlphanumericCodec.encode("HOTSPOT"));
+        request.setExchangeId(AlphanumericCodec.encode("#FILL"));
         request.setSourceId(CLIENT_SOURCE_ID); // Identify order source
         request.setTimestamp(System.currentTimeMillis());
         return request;

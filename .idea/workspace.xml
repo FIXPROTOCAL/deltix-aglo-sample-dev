@@ -9,26 +9,36 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/deltix_ember_1_9.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/algorithm-sample-1.0.8-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/algorithm-sample-1.0.8-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmFuzzy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmMock.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/deltix.ember.samples.algorithm.iceberg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/deltix.ember.samples.algorithm.price.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/deltix.ember.samples.algorithm.price.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmFuzzy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmMock.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithmFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithmFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergOrderParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergOrderParameters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/algorithm-sample-1.0.8-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/deltix.ember.samples.algorithm.price.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithmFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithmFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergOrderParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergOrderParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +109,43 @@
       <recent name="F:\CODE\sample\deltix-aglo-sample-dev\src\main\java\deltix\ember\samples\algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Test_SynthPriceAlgorithmMock">
+  <component name="RunManager" selected="Application.OrderSubmitSample">
+    <configuration name="OrderSubmitSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="deltix.ember.samples.algorithm.iceberg.OrderSubmitSample" />
+      <module name="algorithm-sample.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deltix.ember.samples.algorithm.iceberg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_IcebergAlgorithmFuzzy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;deltix.ember.samples.algorithm.iceberg.Test_IcebergAlgorithmFuzzy&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Test_SynthPriceAlgorithmMock" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -119,27 +165,6 @@
         <option name="vmOptions" />
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="deltix-aglo-sample-1.0.8-SNAPSHOT [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildDependents" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -186,34 +211,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="deltix-aglo-sample-1.0.8-SNAPSHOT [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Test_SynthPriceAlgorithmMock" />
-        <item itemvalue="Gradle.deltix-aglo-sample-1.0.8-SNAPSHOT [build]" />
         <item itemvalue="Gradle.deltix-aglo-sample-1.0.8-SNAPSHOT [clean]" />
-        <item itemvalue="Gradle.deltix-aglo-sample-1.0.8-SNAPSHOT [jar]" />
-        <item itemvalue="Gradle.deltix-aglo-sample-1.0.8-SNAPSHOT [buildDependents]" />
+        <item itemvalue="Gradle.deltix-aglo-sample-1.0.8-SNAPSHOT [build]" />
+        <item itemvalue="Gradle.Test_IcebergAlgorithmFuzzy" />
+        <item itemvalue="Application.OrderSubmitSample" />
+        <item itemvalue="Gradle.Test_SynthPriceAlgorithmMock" />
       </list>
     </recent_temporary>
   </component>
@@ -232,6 +236,15 @@
       <workItem from="1647224350862" duration="851000" />
       <workItem from="1647225309036" duration="387000" />
       <workItem from="1647225729323" duration="1041000" />
+      <workItem from="1648003023351" duration="1196000" />
+      <workItem from="1648087930235" duration="1076000" />
+      <workItem from="1648433812457" duration="588000" />
+      <workItem from="1648519959321" duration="119000" />
+      <workItem from="1648520114895" duration="838000" />
+      <workItem from="1648521225489" duration="1460000" />
+      <workItem from="1648606682094" duration="4030000" />
+      <workItem from="1649038416724" duration="2330000" />
+      <workItem from="1649125473693" duration="3095000" />
     </task>
     <servers />
   </component>
@@ -248,5 +261,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithm.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
