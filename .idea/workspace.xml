@@ -5,40 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2794f40f-d83f-4d5b-ad35-5cbba04ef0de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documents/Ember - Quick Start (Linux and Windows).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documents/How to use SIM trading simulator.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithmFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithmFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergOrderParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergOrderParameters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/algorithm-sample-1.0.8-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/deltix.ember.samples.algorithm.price.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-deltix.ember.samples.algorithm.price.Test_SynthPriceAlgorithmMock.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithmFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithmFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergOrderParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergOrderParameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/centralsmd/CentralSecurityMasterSampleAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/centralsmd/InstrumentInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithmFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergOrderParameters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/orderbook/OrderBookSampleAlgorithm$SampleOrderBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/orderbook/OrderBookSampleAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/price/L2FeedEmitter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/price/SynthPriceAlgorithm$OrderBookData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/price/SynthPriceAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/price/SynthPriceAlgorithmFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/timeout/TimedOrderAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/timeout/TimedOrderAlgorithmFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/iceberg/Test_IcebergAlgorithmFuzzy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/iceberg/Test_IcebergAlgorithmMock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/price/LogProcessorAdapter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/price/LogProcessorAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/price/MessageCountingFullOrderBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/price/OrderBookProducingAlgorithmTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/price/OrderBookProducingAlgorithmTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/price/Test_SynthPriceAlgorithmMock.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +107,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../sample/sample/ember-java-sample-1.0-SNAPSHOT" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.30625" />
     <property name="project.structure.side.proportion" value="0.497006" />
@@ -245,6 +254,9 @@
       <workItem from="1648606682094" duration="4030000" />
       <workItem from="1649038416724" duration="2330000" />
       <workItem from="1649125473693" duration="3095000" />
+      <workItem from="1649643359634" duration="377000" />
+      <workItem from="1649663923453" duration="593000" />
+      <workItem from="1650251695416" duration="1656000" />
     </task>
     <servers />
   </component>
