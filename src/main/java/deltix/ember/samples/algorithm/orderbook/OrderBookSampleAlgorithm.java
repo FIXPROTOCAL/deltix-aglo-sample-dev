@@ -5,6 +5,7 @@ import deltix.anvil.util.annotation.Alphanumeric;
 import deltix.anvil.util.codec.AlphanumericCodec;
 import deltix.dfp.Decimal;
 import deltix.dfp.Decimal64Utils;
+import deltix.ember.samples.algorithm.iceberg.IcebergAlgorithm;
 import deltix.ember.service.algorithm.AbstractAlgorithm;
 import deltix.ember.service.algorithm.AlgoOrder;
 import deltix.ember.service.algorithm.AlgorithmContext;
@@ -25,6 +26,9 @@ import deltix.quoteflow.orderbook.interfaces.OrderBookList;
 
 import java.util.function.Function;
 
+import deltix.gflog.Log;
+import deltix.gflog.LogFactory;
+
 /**
  * Sample that demonstrates how to use Deltix QuoteFlow Order Book in algorithms
  */
@@ -32,13 +36,14 @@ public class OrderBookSampleAlgorithm extends AbstractAlgorithm<AlgoOrder, Order
 
     private final OrderBookPools sharedOrderBookPools = new OrderBookPools();
     private final DecimalLongDecimalLongPair longlong = new DecimalLongDecimalLongPair();
+    private static final Log LOG = LogFactory.getLog(OrderBookSampleAlgorithm.class);
 
     public OrderBookSampleAlgorithm(AlgorithmContext context, OrdersCacheSettings cacheSettings) {
         super(context, cacheSettings);
     }
 
     @Override
-    protected Factory<AlgoOrder> createParentOrderFactory() {
+     protected Factory<AlgoOrder> createParentOrderFactory() {
         return AlgoOrder::new;
     }
 
@@ -59,6 +64,7 @@ public class OrderBookSampleAlgorithm extends AbstractAlgorithm<AlgoOrder, Order
         private final FullOrderBook orderBook;
 
         SampleOrderBook(CharSequence symbol) {
+            LOG.info("SampleOrderBook");
             this.orderBook = new FullOrderBook(symbol, OrderBookWaitingSnapshotMode.WAITING_FOR_SNAPSHOT, sharedOrderBookPools, DataModelType.LEVEL_TWO);
         }
 
@@ -87,6 +93,7 @@ public class OrderBookSampleAlgorithm extends AbstractAlgorithm<AlgoOrder, Order
 
     /** Very basic illustration of Full Order Book component API. Refer to QuoteFlow  */
     private void iterateAggregatedBook (FullOrderBook aggregatedBook) {
+        LOG.info("iterateAggregatedBook");
         if (LOGGER.isTraceEnabled()) {
             LOGGER.trace("You need %s to buy %s")
                     .withDecimal64(aggregatedBook.getMoneyForVolume(HUNDRED, QuoteSide.ASK, longlong).getSecond())
@@ -118,6 +125,7 @@ public class OrderBookSampleAlgorithm extends AbstractAlgorithm<AlgoOrder, Order
     }
 
     private static @Decimal long calculateVWAP (OrderBookList<OrderBookLevel> levels) {
+        LOG.info("calculateVWAP");
         @Decimal long totalValue = Decimal64Utils.ZERO;
         @Decimal long totalSize = Decimal64Utils.ZERO;
         for (int i=0; i < levels.size(); i++) {

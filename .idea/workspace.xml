@@ -5,48 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2794f40f-d83f-4d5b-ad35-5cbba04ef0de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/documents/Ember - Quick Start (Linux and Windows).docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/How to use SIM trading simulator.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/centralsmd/CentralSecurityMasterSampleAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/centralsmd/InstrumentInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithmFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/iceberg/IcebergOrderParameters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/orderbook/OrderBookSampleAlgorithm$SampleOrderBook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/orderbook/OrderBookSampleAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/price/L2FeedEmitter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/price/SynthPriceAlgorithm$OrderBookData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/price/SynthPriceAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/price/SynthPriceAlgorithmFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/timeout/TimedOrderAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/deltix/ember/samples/algorithm/timeout/TimedOrderAlgorithmFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/iceberg/Test_IcebergAlgorithmFuzzy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/iceberg/Test_IcebergAlgorithmMock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/price/LogProcessorAdapter$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/price/LogProcessorAdapter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/price/MessageCountingFullOrderBook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/price/OrderBookProducingAlgorithmTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/price/OrderBookProducingAlgorithmTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/deltix/ember/samples/algorithm/price/Test_SynthPriceAlgorithmMock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/orderbook/OrderBookSampleAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/orderbook/OrderBookSampleAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +79,7 @@
       <recent name="F:\CODE\sample\deltix-aglo-sample-dev\src\main\java\deltix\ember\samples\algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OrderSubmitSample">
+  <component name="RunManager" selected="Gradle.deltix-aglo-sample-1.0.8-SNAPSHOT [build]">
     <configuration name="OrderSubmitSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="deltix.ember.samples.algorithm.iceberg.OrderSubmitSample" />
       <module name="algorithm-sample.test" />
@@ -222,8 +183,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.deltix-aglo-sample-1.0.8-SNAPSHOT [clean]" />
         <item itemvalue="Gradle.deltix-aglo-sample-1.0.8-SNAPSHOT [build]" />
+        <item itemvalue="Gradle.deltix-aglo-sample-1.0.8-SNAPSHOT [clean]" />
         <item itemvalue="Gradle.Test_IcebergAlgorithmFuzzy" />
         <item itemvalue="Application.OrderSubmitSample" />
         <item itemvalue="Gradle.Test_SynthPriceAlgorithmMock" />
@@ -257,6 +218,8 @@
       <workItem from="1649643359634" duration="377000" />
       <workItem from="1649663923453" duration="593000" />
       <workItem from="1650251695416" duration="1656000" />
+      <workItem from="1650421043684" duration="2741000" />
+      <workItem from="1650608674905" duration="8314000" />
     </task>
     <servers />
   </component>
@@ -273,16 +236,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/iceberg/IcebergAlgorithm.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -12,7 +12,7 @@ public class OrderSubmitSample extends SampleSupportTools {
     public static void main(String[] args) throws InterruptedException {
         sendRequest(
                 (publication) -> {
-                    OrderNewRequest request = createNewOrderRequest(Side.BUY, 10, "BTCUSD", 0);
+                    OrderNewRequest request = createNewOrderRequest(Side.BUY, 1, "BTC/USD", 40000);
                     publication.onNewOrderRequest(request);
                     System.out.println("New order request was sent " + request.getSourceId() + ':' + request.getOrderId() + ":" + request.getOrderType());
                 }
