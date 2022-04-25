@@ -28,7 +28,7 @@ repositories {
 }
 
 ext {
-    emberVersion = '1.9.51'
+    emberVersion = '1.10.15'
     quantServerCommonsVersion = '5.4.20'
 }
 

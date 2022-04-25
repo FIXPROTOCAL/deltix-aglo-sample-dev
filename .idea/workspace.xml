@@ -7,9 +7,7 @@
     <list default="true" id="2794f40f-d83f-4d5b-ad35-5cbba04ef0de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/xhub/TWAPAlgorithm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/xhub/TWAPAlgorithmFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/xhub/TWAPOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,11 @@
                 <item name="algorithm-sample" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="algorithm-sample" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
             </expand>
             <select />
