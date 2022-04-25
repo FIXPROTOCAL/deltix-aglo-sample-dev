@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2794f40f-d83f-4d5b-ad35-5cbba04ef0de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/orderbook/OrderBookSampleAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/orderbook/OrderBookSampleAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deltix/ember/samples/algorithm/iceberg/OrderSubmitSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/xhub/TWAPAlgorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/xhub/TWAPAlgorithmFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deltix/ember/samples/algorithm/xhub/TWAPOrder.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +221,8 @@
       <workItem from="1649663923453" duration="593000" />
       <workItem from="1650251695416" duration="1656000" />
       <workItem from="1650421043684" duration="2741000" />
-      <workItem from="1650608674905" duration="8314000" />
+      <workItem from="1650608674905" duration="8316000" />
+      <workItem from="1650854074919" duration="1227000" />
     </task>
     <servers />
   </component>
