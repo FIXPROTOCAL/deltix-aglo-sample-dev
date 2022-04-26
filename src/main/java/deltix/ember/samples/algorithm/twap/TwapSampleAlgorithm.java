@@ -47,6 +47,7 @@ class TwapSampleAlgorithm extends SimplifiedAbstractAlgorithm<TwapOrder> {
 
     @Override
     protected void handleNewOrder(TwapOrder order, OrderNewRequest request) {
+        LOGGER.info("handleNewOrder");
         order.copyExtraAttributes(request, false, getClock());
         if (LOGGER.isEnabled(LogLevel.INFO))
             LOGGER.info("TWAP order %s will send %s clips with interval %s msec").with(order.getOrderId()).with(order.getNumberOfClips()).with(order.getInterval());
@@ -57,6 +58,7 @@ class TwapSampleAlgorithm extends SimplifiedAbstractAlgorithm<TwapOrder> {
 
     @Override
     protected void handleReplace(TwapOrder order, OrderReplaceRequest request) {
+        LOGGER.info("handleReplace");
         assert Decimal64Utils.isPositive(order.getRemainingQuantity()); // FullOrderValidator
 
         if (isLeader())
@@ -79,6 +81,7 @@ class TwapSampleAlgorithm extends SimplifiedAbstractAlgorithm<TwapOrder> {
     }
 
     private void submitNextChildOrder(TwapOrder order) {
+        LOGGER.info("submitNextChildOrder");
         assert isLeader();
         @Decimal long clipQuantity = roundSize(order.getNextClipSize());
 

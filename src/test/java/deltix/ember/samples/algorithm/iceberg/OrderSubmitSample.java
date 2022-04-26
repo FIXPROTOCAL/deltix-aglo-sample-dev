@@ -4,6 +4,7 @@ import deltix.anvil.util.codec.AlphanumericCodec;
 import com.epam.deltix.dfp.Decimal64Utils;
 import deltix.ember.message.trade.*;
 import deltix.ember.sample.SampleSupportTools;
+import deltix.util.collections.generated.ObjectList;
 
 /**
  * Sample that illustrates how to send new trade order and listen for trading events
@@ -12,7 +13,7 @@ public class OrderSubmitSample extends SampleSupportTools {
     public static void main(String[] args) throws InterruptedException {
         sendRequest(
                 (publication) -> {
-                    OrderNewRequest request = createNewOrderRequest(Side.BUY, 1, "BTC/USD", 7500);
+                    OrderNewRequest request = createNewOrderRequest(Side.BUY, 100, "BTC/USD", 40000);
                     publication.onNewOrderRequest(request);
                     System.out.println("New order request was sent " + request.getSourceId() + ':' + request.getOrderId());
                 }

@@ -18,8 +18,13 @@ import deltix.ember.service.algorithm.AlgoOrder;
 import deltix.ember.service.algorithm.util.OrderAttributesParser;
 import deltix.ember.service.valid.InvalidOrderException;
 import deltix.util.collections.generated.ObjectList;
+import deltix.gflog.Log;
+import deltix.gflog.LogFactory;
 
 class TwapOrder extends AlgoOrder {
+
+    private static final Log LOG = LogFactory.getLog(TwapOrder.class);
+
     static final long ONE_LOT = Decimal64Utils.ONE;
 
     /// region Input Parameters
@@ -66,10 +71,14 @@ class TwapOrder extends AlgoOrder {
 
     void copyExtraAttributes(OrderEntryRequest request, boolean modify, EpochClock clock) {
         // parse parameters
+        LOG.info("copyExtraAttributes:"+request);
+        LOG.info("copyExtraAttributes:"+request.hasAttributes());
         if (request.hasAttributes()) {
             ObjectList<CustomAttribute> attributes = request.getAttributes();
+//            LOG.info("ObjectList<CustomAttribute>"+attributes);
             for (int i = 0, size = attributes.size(); i < size; i++) {
                 CustomAttribute attribute = attributes.get(i);
+//                LOG.info("attribute:"+attribute);
                 switch (attribute.getKey()) {
                     case START_TIME_ATTRIBUTE_KEY:
                         startTime = TimestampParser.parseTimestamp(attribute.getValue());
