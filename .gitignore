@@ -246,3 +246,4 @@ pip-log.txt
 caches/
 daemon/
 wrapper/
+deltix-ember-1.10.15/logs/
