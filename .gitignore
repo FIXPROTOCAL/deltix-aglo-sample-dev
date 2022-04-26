@@ -243,3 +243,6 @@ pip-log.txt
 /home/counters.data
 /home/journal/data0
 /home/journal/meta
+caches/
+daemon/
+wrapper/
