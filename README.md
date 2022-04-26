@@ -10,8 +10,6 @@ Edit `gradle.properties` and correct location of Execution Server installation (
 ```
 emberdir=D:/projects/deltix/ember
 ```
-Edit `build.gradle` with versions of services according to files are contained in ember lib folder on local machine. Please use build project to determine what should be changed.
-
 
 ### Test
 This project includes two kinds of unit tests for algorithm:

@@ -1,7 +1,8 @@
 package deltix.ember.samples.algorithm.price;
 
+import com.epam.deltix.dfp.Decimal64Utils;
 import deltix.data.stream.MessageChannel;
-import deltix.dfp.Decimal64Utils;
+import deltix.ember.message.smd.InstrumentType;
 import deltix.ember.service.algorithm.AbstractAlgorithm;
 import deltix.ember.service.algorithm.AlgorithmContext;
 import deltix.ember.service.algorithm.SingleLegExecutionAlgoUnitTest;
@@ -52,8 +53,8 @@ abstract public class OrderBookProducingAlgorithmTest<A extends AbstractAlgorith
     private final MessageCountingFullOrderBook orderBook;
     private final List<PackageHeader> messages = new ArrayList<>();
 
-    public OrderBookProducingAlgorithmTest(String outputSymbol) {
-        super (outputSymbol);
+    public OrderBookProducingAlgorithmTest(String outputSymbol, InstrumentType instrumentType) {
+        super (outputSymbol, instrumentType);
         orderBook = new MessageCountingFullOrderBook(outputSymbol);
         orderBook.setLogger(new LogProcessorAdapter());
     }
@@ -156,9 +157,9 @@ abstract public class OrderBookProducingAlgorithmTest<A extends AbstractAlgorith
     private static void appendLevel(StringBuilder sb, OrderBookLevel level) {
         if (sb.length() > 0)
             sb.append('\n');
-        sb.append(deltix.dfp.Decimal64Utils.toString(level.getSize()));
+        sb.append(Decimal64Utils.toString(level.getSize()));
         sb.append(" @ ");
-        sb.append(deltix.dfp.Decimal64Utils.toString(level.getPrice()));
+        sb.append(Decimal64Utils.toString(level.getPrice()));
     }
 }
 

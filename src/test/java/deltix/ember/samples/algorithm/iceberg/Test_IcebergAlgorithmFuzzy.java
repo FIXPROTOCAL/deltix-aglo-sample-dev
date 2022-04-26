@@ -1,8 +1,8 @@
 package deltix.ember.samples.algorithm.iceberg;
 
 import deltix.anvil.util.annotation.Alphanumeric;
-import deltix.dfp.Decimal;
-import deltix.dfp.Decimal64Utils;
+import com.epam.deltix.dfp.Decimal;
+import com.epam.deltix.dfp.Decimal64Utils;
 import deltix.ember.message.trade.MutableOrderEntryRequest;
 import deltix.ember.service.algorithm.AlgoOrder;
 import deltix.ember.service.algorithm.fuzzy.AlgorithmFuzzyTest;

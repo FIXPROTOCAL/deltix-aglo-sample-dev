@@ -1,49 +1,45 @@
 package deltix.ember.samples.algorithm.orderbook;
 
+import com.epam.deltix.dfp.Decimal;
+import com.epam.deltix.dfp.Decimal64Utils;
 import deltix.anvil.util.Factory;
 import deltix.anvil.util.annotation.Alphanumeric;
 import deltix.anvil.util.codec.AlphanumericCodec;
-import deltix.dfp.Decimal;
-import deltix.dfp.Decimal64Utils;
-import deltix.ember.samples.algorithm.iceberg.IcebergAlgorithm;
+import deltix.ember.message.smd.InstrumentType;
 import deltix.ember.service.algorithm.AbstractAlgorithm;
 import deltix.ember.service.algorithm.AlgoOrder;
 import deltix.ember.service.algorithm.AlgorithmContext;
 import deltix.ember.service.algorithm.ChildOrder;
-import deltix.ember.service.algorithm.md.InstrumentData;
+import deltix.ember.service.algorithm.md.AbstractInstrumentData;
+import deltix.ember.service.algorithm.md.InstrumentDataFactory;
 import deltix.ember.service.oms.cache.OrdersCacheSettings;
 import deltix.qsrv.hf.pub.InstrumentMessage;
-import deltix.timebase.api.messages.DataModelType;
-import deltix.timebase.api.messages.QuoteSide;
-import deltix.timebase.api.messages.universal.PackageHeader;
-import rtmath.containers.generated.DecimalLongDecimalLongPair;
 import deltix.quoteflow.orderbook.FullOrderBook;
-import deltix.quoteflow.orderbook.OrderBookPools;
 import deltix.quoteflow.orderbook.OrderBookWaitingSnapshotMode;
+import deltix.quoteflow.orderbook.interfaces.DisconnectBehaviour;
 import deltix.quoteflow.orderbook.interfaces.ExchangeOrderBook;
 import deltix.quoteflow.orderbook.interfaces.OrderBookLevel;
 import deltix.quoteflow.orderbook.interfaces.OrderBookList;
-
-import java.util.function.Function;
-
-import deltix.gflog.Log;
-import deltix.gflog.LogFactory;
+import deltix.timebase.api.messages.DataModelType;
+import deltix.timebase.api.messages.MarketMessageInfo;
+import deltix.timebase.api.messages.QuoteSide;
+import rtmath.containers.generated.DecimalLongDecimalLongPair;
 
 /**
  * Sample that demonstrates how to use Deltix QuoteFlow Order Book in algorithms
  */
 public class OrderBookSampleAlgorithm extends AbstractAlgorithm<AlgoOrder, OrderBookSampleAlgorithm.SampleOrderBook> {
 
-    private final OrderBookPools sharedOrderBookPools = new OrderBookPools();
+    //TODO//issue#813//private final OrderBookPools sharedOrderBookPools = new OrderBookPools();
     private final DecimalLongDecimalLongPair longlong = new DecimalLongDecimalLongPair();
-    private static final Log LOG = LogFactory.getLog(OrderBookSampleAlgorithm.class);
+
 
     public OrderBookSampleAlgorithm(AlgorithmContext context, OrdersCacheSettings cacheSettings) {
         super(context, cacheSettings);
     }
 
     @Override
-     protected Factory<AlgoOrder> createParentOrderFactory() {
+    protected Factory<AlgoOrder> createParentOrderFactory() {
         return AlgoOrder::new;
     }
 
@@ -54,30 +50,31 @@ public class OrderBookSampleAlgorithm extends AbstractAlgorithm<AlgoOrder, Order
 
     /** Tell container we use SampleOrderBook instances to process market data for each instrument */
     @Override
-    protected Function<CharSequence, SampleOrderBook> createInstrumentInfoFactory() {
+    protected InstrumentDataFactory<SampleOrderBook> createInstrumentDataFactory() {
         return SampleOrderBook::new;
     }
 
 
-    final class SampleOrderBook implements InstrumentData {
+    static final class SampleOrderBook extends AbstractInstrumentData {
 
         private final FullOrderBook orderBook;
 
-        SampleOrderBook(CharSequence symbol) {
-            LOG.info("SampleOrderBook");
-            this.orderBook = new FullOrderBook(symbol, OrderBookWaitingSnapshotMode.WAITING_FOR_SNAPSHOT, sharedOrderBookPools, DataModelType.LEVEL_TWO);
+        SampleOrderBook(CharSequence symbol, InstrumentType instrumentType) {
+            super(symbol, instrumentType);
+            this.orderBook = new FullOrderBook(getSymbol(), OrderBookWaitingSnapshotMode.WAITING_FOR_SNAPSHOT, null, DataModelType.LEVEL_TWO);
+            this.orderBook.setDisconnectBehaviour(DisconnectBehaviour.CLEAR_EXCHANGE);
         }
 
         @Override
         public String getSymbol() {
-            return (String)orderBook.getSymbol();
+            return (String) orderBook.getSymbol();
         }
 
         /** Feed order book from algorithm subscription */
         @Override
         public void onMarketMessage(InstrumentMessage message) {
-            if (message instanceof PackageHeader)
-                orderBook.update((PackageHeader)message);
+            if (message instanceof MarketMessageInfo)
+                orderBook.update((MarketMessageInfo)message);
         }
     }
 
@@ -93,7 +90,7 @@ public class OrderBookSampleAlgorithm extends AbstractAlgorithm<AlgoOrder, Order
 
     /** Very basic illustration of Full Order Book component API. Refer to QuoteFlow  */
     private void iterateAggregatedBook (FullOrderBook aggregatedBook) {
-        LOG.info("iterateAggregatedBook");
+
         if (LOGGER.isTraceEnabled()) {
             LOGGER.trace("You need %s to buy %s")
                     .withDecimal64(aggregatedBook.getMoneyForVolume(HUNDRED, QuoteSide.ASK, longlong).getSecond())
@@ -104,8 +101,6 @@ public class OrderBookSampleAlgorithm extends AbstractAlgorithm<AlgoOrder, Order
                     .withDecimal64(calculateVWAP(aggregatedBook.getTopLevels(100, QuoteSide.ASK)));
         }
     }
-
-
 
     private static final @Alphanumeric long BINANCE_ID = AlphanumericCodec.encode("BINANCE");
 
@@ -125,7 +120,6 @@ public class OrderBookSampleAlgorithm extends AbstractAlgorithm<AlgoOrder, Order
     }
 
     private static @Decimal long calculateVWAP (OrderBookList<OrderBookLevel> levels) {
-        LOG.info("calculateVWAP");
         @Decimal long totalValue = Decimal64Utils.ZERO;
         @Decimal long totalSize = Decimal64Utils.ZERO;
         for (int i=0; i < levels.size(); i++) {

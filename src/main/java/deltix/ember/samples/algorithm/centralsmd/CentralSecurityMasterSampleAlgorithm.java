@@ -1,22 +1,25 @@
 package deltix.ember.samples.algorithm.centralsmd;
 
 import deltix.anvil.util.Factory;
-import deltix.dfp.Decimal;
-import deltix.dfp.Decimal64Utils;
+import com.epam.deltix.dfp.Decimal;
+import com.epam.deltix.dfp.Decimal64Utils;
+import deltix.ember.message.smd.InstrumentType;
 import deltix.ember.service.algorithm.AlgorithmContext;
 import deltix.ember.service.algorithm.md.AbstractInstrumentData;
+import deltix.ember.service.algorithm.md.InstrumentDataFactory;
 import deltix.ember.service.algorithm.v2.AbstractTradingAlgorithm;
 import deltix.ember.service.algorithm.v2.order.OutboundOrder;
 import deltix.ember.service.oms.TradingUtils;
 import deltix.ember.service.oms.cache.OrdersCacheSettings;
 import deltix.qsrv.hf.pub.InstrumentMessage;
+
 import deltix.securitymaster.InstrumentMetadataProvider;
 import deltix.securitymaster.messages.CryptoCurrency;
 import deltix.timebase.api.messages.securities.GenericInstrument;
 
 import java.util.Collection;
 import java.util.List;
-import java.util.function.Function;
+
 
 /**
  * This class simply illustrates how to use Centralized Security Master.
@@ -45,7 +48,7 @@ public class CentralSecurityMasterSampleAlgorithm extends AbstractTradingAlgorit
     }
 
     @Override
-    protected Function<CharSequence, InstrumentInfo> createInstrumentInfoFactory() {
+    protected InstrumentDataFactory<InstrumentInfo> createInstrumentDataFactory() {
         return InstrumentInfo::new;
     }
 
@@ -77,8 +80,8 @@ class InstrumentInfo extends AbstractInstrumentData {
     @Decimal
     private long orderSizePrecision = Decimal64Utils.NULL;
 
-    public InstrumentInfo(CharSequence symbol) {
-        super(symbol);
+    public InstrumentInfo(CharSequence symbol, InstrumentType instrumentType) {
+        super(symbol, instrumentType);
     }
 
     @Override

@@ -1,34 +1,27 @@
 package deltix.ember.samples.algorithm.iceberg;
 
+import com.epam.deltix.dfp.Decimal;
+import com.epam.deltix.dfp.Decimal64Utils;
 import deltix.anvil.util.Factory;
 import deltix.anvil.util.TypeConstants;
-import deltix.dfp.Decimal;
-import deltix.dfp.Decimal64Utils;
 import deltix.ember.message.trade.*;
 import deltix.ember.service.algorithm.AlgorithmContext;
 import deltix.ember.service.algorithm.ChildOrder;
-import deltix.ember.service.algorithm.MarketSubscription;
-import deltix.ember.service.algorithm.md.MarketDataProcessor;
-import deltix.ember.service.algorithm.md.SimpleInstrumentPrices;
+import deltix.ember.service.algorithm.md.InstrumentDataFactory;
 import deltix.ember.service.algorithm.slicer.SlicingAlgorithm;
 import deltix.ember.service.oms.cache.OrdersCacheSettings;
-import deltix.gflog.Log;
-import deltix.gflog.LogFactory;
 
 import javax.annotation.Nullable;
 import java.util.List;
-import java.util.function.Function;
 
 @SuppressWarnings("Duplicates")
-public class IcebergAlgorithm extends SlicingAlgorithm<IcebergOrder, SimpleInstrumentPrices> {
+public class IcebergAlgorithm extends SlicingAlgorithm<IcebergOrder, IcebergInstrumentData> {
     private final long defaultOrderDestination;
-    private static final Log LOG = LogFactory.getLog(IcebergAlgorithm.class);
+
     IcebergAlgorithm(final AlgorithmContext context,
                             final OrdersCacheSettings cacheSettings, final long defaultOrderDestination) {
         super(context, cacheSettings);
         this.defaultOrderDestination = defaultOrderDestination;
-        LOG.info("IcebergAlgorithm");
-        LOG.debug("IcebergAlgorithm");
     }
 
     @Override
@@ -42,31 +35,25 @@ public class IcebergAlgorithm extends SlicingAlgorithm<IcebergOrder, SimpleInstr
     }
 
     @Override
-    protected Function<CharSequence, SimpleInstrumentPrices> createInstrumentInfoFactory() {
-        assert false : "This method should never be called";
-        return null;
+    protected InstrumentDataFactory<IcebergInstrumentData> createInstrumentDataFactory()  {
+        return IcebergInstrumentData::new;
     }
-
-    @Nullable
-    @Override
-    protected MarketDataProcessor<SimpleInstrumentPrices> createMarketDataProcessor(final MarketSubscription subscription) {
-        // We do not need market data.
-        return null;
-    }
-
 
     @Override
     protected CharSequence processNewOrder(IcebergOrder parent, OrderNewRequest request) {
-        LOG.info("processNewOrder");
         if (request.getOrderType() != OrderType.CUSTOM && request.getOrderType() != OrderType.LIMIT)
             return "Only CUSTOM or LIMIT orders are expected.";
 
         if ( ! request.hasLimitPrice())
             return "Limit price must be provided.";
 
-        parent.updateSymbolMetaInfo(getSecurityMetadata().getSMD(parent.getSymbol()));
+        IcebergInstrumentData insrument = get(parent.getSymbol());
+        if (insrument == null)
+            return "Unknown instrument"; // shouldn't happen, ensured by OMS
 
-        if (Decimal64Utils.isGreater(parent.getMinOrderSize(), parent.getMaxOrderQuantity()))
+        parent.setInstrument(insrument);
+
+        if (Decimal64Utils.isGreater(insrument.getMinOrderSize(), parent.getMaxOrderQuantity()))
             return "Invalid order size (< minimum order size).";
 
         return super.processNewOrder(parent, request);
@@ -93,7 +80,6 @@ public class IcebergAlgorithm extends SlicingAlgorithm<IcebergOrder, SimpleInstr
      */
     @Override
     protected void submitMoreChildrenIfNecessary(IcebergOrder parent) {
-        LOG.info("submitMoreChildrenIfNecessary");
         assert isLeader() : "This method should never be called for the follower";
 
         @Decimal final long remainingQuantity = parent.getRemainingQuantity();
@@ -106,12 +92,13 @@ public class IcebergAlgorithm extends SlicingAlgorithm<IcebergOrder, SimpleInstr
 
                 @Decimal long childQuantity = Decimal64Utils.subtract(Decimal64Utils.min(remainingQuantity, displayQuantity), quantityOnTheMarket);
 
-                if (Decimal64Utils.isGreater(parent.getMinOrderSize(), childQuantity)) {
+                IcebergInstrumentData instrument = parent.getInstrument();
+                if (Decimal64Utils.isGreater(instrument.getMinOrderSize(), childQuantity)) {
                     sendCancelEvent(parent, "Invalid order size (< minimum order size).");
                     return;
                 }
 
-                childQuantity = parent.roundOrderQuantity(childQuantity);
+                childQuantity = instrument.roundOrderQuantity(childQuantity);
 
                 if (Decimal64Utils.isLessOrEqual(childQuantity, Decimal64Utils.ZERO)) {
                     sendCancelEvent(parent, "Invalid order size (< minimum order size).");
@@ -132,11 +119,11 @@ public class IcebergAlgorithm extends SlicingAlgorithm<IcebergOrder, SimpleInstr
 
     @Override
     protected CharSequence processReplace(final IcebergOrder parent, final OrderReplaceRequest request) {
-        LOG.info("processReplace");
         if (request.hasOrderType() && request.getOrderType() != parent.getOrderType())
             return "Order type cannot be modified.";
 
-        if (Decimal64Utils.isGreater(parent.getMinOrderSize(), request.getQuantity()))
+        IcebergInstrumentData instrument = parent.getInstrument();
+        if (Decimal64Utils.isGreater(instrument.getMinOrderSize(), request.getQuantity()))
             return "Invalid order size (< minimum order size).";
 
         return super.processReplace(parent, request);
@@ -165,7 +152,6 @@ public class IcebergAlgorithm extends SlicingAlgorithm<IcebergOrder, SimpleInstr
     @Override
     @SuppressWarnings("unchecked")
     protected void commitReplace(IcebergOrder parent) {
-        LOG.info("commitReplace");
         if (isLeader()) {
             final List<ChildOrder> children = parent.getActiveChildren();
             // If order has no active children, new child orders submitted from Normal state will use new attributes.
@@ -179,12 +165,13 @@ public class IcebergAlgorithm extends SlicingAlgorithm<IcebergOrder, SimpleInstr
                 if (!Decimal64Utils.isNaN(newDisplayQuantity))
                     newQuantity = Decimal64Utils.min(newQuantity, Decimal64Utils.add(newDisplayQuantity, remainingChild.getTotalExecutedQuantity()));
 
-                if (Decimal64Utils.isGreater(parent.getMinOrderSize(), newQuantity)) {
+                IcebergInstrumentData instrument = parent.getInstrument();
+                if (Decimal64Utils.isGreater(instrument.getMinOrderSize(), newQuantity)) {
                     sendCancelEvent(parent, "Invalid order size (< minimum order size).");
                     return;
                 }
 
-                newQuantity = parent.roundOrderQuantity(newQuantity);
+                newQuantity = instrument.roundOrderQuantity(newQuantity);
 
                 @Decimal long newPrice = parent.getCommitLimitOrder().getLimitPrice();
 
@@ -202,7 +189,6 @@ public class IcebergAlgorithm extends SlicingAlgorithm<IcebergOrder, SimpleInstr
 
     @Override
     protected MutableOrderNewRequest makeChildOrderRequest(final IcebergOrder icebergOrder) {
-        LOG.info("makeChildOrderRequest");
         final MutableOrderNewRequest request = super.makeChildOrderRequest(icebergOrder);
         if (defaultOrderDestination != TypeConstants.LONG_NULL)
             request.setDestinationId(defaultOrderDestination);
@@ -211,7 +197,6 @@ public class IcebergAlgorithm extends SlicingAlgorithm<IcebergOrder, SimpleInstr
 
     @Override
     protected MutableOrderReplaceRequest makeReplaceRequest(final ChildOrder<IcebergOrder> order) {
-        LOG.info("MutableOrderReplaceRequest");
         final MutableOrderReplaceRequest request = super.makeReplaceRequest(order);
         if (defaultOrderDestination != TypeConstants.LONG_NULL)
             request.setDestinationId(defaultOrderDestination);
@@ -220,7 +205,6 @@ public class IcebergAlgorithm extends SlicingAlgorithm<IcebergOrder, SimpleInstr
 
     @Override
     protected MutableOrderCancelRequest makeCancelRequest(final ChildOrder<IcebergOrder> order, @Nullable final CharSequence reason) {
-        LOG.info("MutableOrderCancelRequest");
         final MutableOrderCancelRequest request = super.makeCancelRequest(order, reason);
         if (defaultOrderDestination != TypeConstants.LONG_NULL)
             request.setDestinationId(defaultOrderDestination);
