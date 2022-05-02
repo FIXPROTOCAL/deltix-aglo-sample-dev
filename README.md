@@ -54,3 +54,33 @@ This package includes Ansible playbook located under `distribution/ansible` fold
 
 
 See Algorithm Developer's Guide for more information.  
+
+
+## Note
+
+1. Installer:
+   Download QuantServer installer here:
+   https://deltix-installers.s3.eu-west-3.amazonaws.com/5.4/deltix-windows-installer-online-5.4.78.jar
+2. Download template home (used post installation). Extract zip into folder.
+   https://deltix-installers.s3.eu-west-3.amazonaws.com/Temp/QuantServerHome.zip
+   This home contains securities definition for Coinbase (BTC/USD, ETH/USD, etc) as well as aggregator
+   process definition file to aggregate level 2 data into Timebase stream called "COINBASE".
+   Timebase runs on port 8011.
+   ember.conf should point to this timebase instance and COINBASE should be used for stream.
+3. Use license key during installation process: 4746-18043582174-D201
+4. Once completed, launch QuantServer Architect and open the folder you previously extracted. Folder structure should be:
+   QuantServerHome:
+   --- config
+   --- logs
+   --- services
+   --- timebase
+
+Open QuantServerHome folder using the architect client. Once open, hover over Timebase block and use
+right mouse button - Start in Console.
+This will start the timebase service and start aggregataing market data from COINBASE exchange.
+
+
+- set path ember on your comuter and gradle.properties and java
+- start Timebase.bat
+- start ember 
+- start ember-monitor  (localhost:8988)

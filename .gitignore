@@ -247,3 +247,5 @@ caches/
 daemon/
 wrapper/
 deltix-ember-1.10.15/logs/
+QuantServerHome/
+deltix-ember-1.10.15/
