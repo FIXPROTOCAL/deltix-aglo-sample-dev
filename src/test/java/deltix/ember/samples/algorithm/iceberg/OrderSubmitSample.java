@@ -4,6 +4,7 @@ import deltix.anvil.util.codec.AlphanumericCodec;
 import com.epam.deltix.dfp.Decimal64Utils;
 import deltix.ember.message.trade.*;
 import deltix.ember.sample.SampleSupportTools;
+import deltix.util.collections.generated.ObjectArrayList;
 import deltix.util.collections.generated.ObjectList;
 
 /**
@@ -34,6 +35,19 @@ public class OrderSubmitSample extends SampleSupportTools {
         request.setExchangeId(AlphanumericCodec.encode("#FILL"));
         request.setSourceId(CLIENT_SOURCE_ID); // Identify order source
         request.setTimestamp(System.currentTimeMillis());
+        ObjectArrayList<CustomAttribute> attributes = new ObjectArrayList<CustomAttribute>();
+        MutableCustomAttribute attr = new MutableCustomAttribute();
+        attr.setKey(6002);
+        attr.setValue("01:00:00");
+        attributes.add(attr);
+
+        MutableCustomAttribute attr_drip = new MutableCustomAttribute();
+        attr_drip.setKey(6023);
+        attr_drip.setValue("10");
+        attributes.add(attr_drip);
+
+        request.setAttributes(attributes);
+
         return request;
     }
 }
