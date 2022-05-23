@@ -14,7 +14,7 @@ public class OrderSubmitSample extends SampleSupportTools {
     public static void main(String[] args) throws InterruptedException {
         sendRequest(
                 (publication) -> {
-                    OrderNewRequest request = createNewOrderRequest(Side.BUY, 100, "BTC/USD", 40000);
+                    OrderNewRequest request = createNewOrderRequest(Side.BUY, 100, "BTC/USD", 38400);
                     publication.onNewOrderRequest(request);
                     System.out.println("New order request was sent " + request.getSourceId() + ':' + request.getOrderId());
                 }
@@ -44,6 +44,13 @@ public class OrderSubmitSample extends SampleSupportTools {
         MutableCustomAttribute attr_drip = new MutableCustomAttribute();
         attr_drip.setKey(6023);
         attr_drip.setValue("10");
+        attributes.add(attr_drip);
+
+        request.setAttributes(attributes);
+
+        MutableCustomAttribute attr_drip2 = new MutableCustomAttribute();
+        attr_drip.setKey(6045);
+        attr_drip.setValue("40000");
         attributes.add(attr_drip);
 
         request.setAttributes(attributes);

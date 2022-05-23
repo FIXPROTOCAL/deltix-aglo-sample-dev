@@ -84,3 +84,5 @@ This will start the timebase service and start aggregataing market data from COI
 - start Timebase.bat
 - start ember 
 - start ember-monitor  (localhost:8988)
+
+

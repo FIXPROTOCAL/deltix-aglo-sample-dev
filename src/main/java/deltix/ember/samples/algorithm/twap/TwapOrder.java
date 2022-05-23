@@ -33,7 +33,7 @@ class TwapOrder extends AlgoOrder {
     static final int DURATION_ATTRIBUTE_KEY = 6002;
     static final int DRIP_PERCENTAGE_ATTRIBUTE_KEY = 6023;
     static final int ACTIVE_TOLERANCE_PERCENTAGE = 6024;
-
+    static final int PRICE_OFFSET  = 6045;
     @Timestamp
     long startTime = TypeConstants.TIMESTAMP_NULL;
 
@@ -73,6 +73,7 @@ class TwapOrder extends AlgoOrder {
         // parse parameters
         LOG.info("copyExtraAttributes:"+request);
         LOG.info("copyExtraAttributes:"+request.hasAttributes());
+
         if (request.hasAttributes()) {
             ObjectList<CustomAttribute> attributes = request.getAttributes();
 //            LOG.info("ObjectList<CustomAttribute>"+attributes);
@@ -95,6 +96,9 @@ class TwapOrder extends AlgoOrder {
                     case ACTIVE_TOLERANCE_PERCENTAGE:
                         activeTolerancePercentage = CharSequenceParser.parseDouble(attribute.getValue());
                         break;
+                    case PRICE_OFFSET:
+                        long priceOffset = Decimal64Utils.parse(attribute.getValue());
+
                 }
             }
         }
